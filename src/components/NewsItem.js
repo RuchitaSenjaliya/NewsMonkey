@@ -6,7 +6,7 @@ export default class NewsItem extends Component {
     return (
       <>
         <div className="card my-3">
-          <span class="position-absolute top-0 translate-middle badge rounded-pill bg-success" style={{zInex: 1, left: '90%'}}>{source}
+          <span class="position-absolute top-0 translate-middle badge rounded-pill bg-success" style={{zInex: 1, left: '87%'}}>{source}
             <span class="visually-hidden">unread messages</span>
           </span>
           <img

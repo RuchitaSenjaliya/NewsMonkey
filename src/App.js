@@ -25,7 +25,8 @@ export default class App extends Component {
             progress={this.state.progress}
           />
           <Routes>
-            <Route exact path="/general" element={<News setProgress = {this.setProgress} 
+            
+            <Route exact path="/" element={<News setProgress = {this.setProgress} 
               key="general"
               pageSize={this.pageSize}
               country="in"
