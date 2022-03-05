@@ -1,12 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 
-export default class NewsItem extends Component {
-  render() {
-    let { title, description, imgUrl, newsUrl, author, date, source } = this.props;
+const NewsItem =(props)=> {
+    let { title, description, imgUrl, newsUrl, author, date, source } =props;
     return (
       <>
         <div className="card my-3">
-          <span class="position-absolute top-0 translate-middle badge rounded-pill bg-success" style={{zInex: 1, left: '90%'}}>{source}
+          <span class="position-absolute top-0 translate-middle badge rounded-pill bg-success" style={{zInex: 1, left: '87%'}}>{source}
             <span class="visually-hidden">unread messages</span>
           </span>
           <img
@@ -34,5 +33,5 @@ export default class NewsItem extends Component {
         </div>
       </>
     );
-  }
 }
+export default NewsItem
